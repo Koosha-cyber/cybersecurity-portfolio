@@ -26,3 +26,45 @@ This repository showcases my **cybersecurity lab projects and hands-on exercises
 
 ## 📂 Repository Structure
 
+
+---
+
+## ✅ Completed Findings
+- **Stored XSS (Blog Comments)** – PortSwigger Lab  
+  - 📄 [Finding documentation](./web-security/findings.md)  
+  - 🖼️ [Screenshots](./web-security/screenshots/)  
+  - 📝 [Detailed Report](./web-security/reports/stored-xss-lab1.md)  
+
+*(More labs will be added regularly)*
+
+---
+
+## 🔬 Methodology
+Every finding is documented with:  
+1. **Platform/Lab**  
+2. **Context** (where the issue occurs)  
+3. **Payload** (lab-only, safe)  
+4. **Evidence** (screenshots)  
+5. **Impact** (real-world risk)  
+6. **Risk rating**  
+7. **Root cause & Remediation**  
+
+---
+
+## 💼 About Me
+I am a cybersecurity engineer passionate about **web security, system defense, and data protection**.  
+This portfolio is part of my continuous learning journey, showcasing both **technical expertise** and the ability to communicate findings clearly.  
+
+📫 Connect with me on [LinkedIn](https://www.linkedin.com/)  
+
+---
+
+## ⚠️ Disclaimer
+All tests documented here are from **educational labs only**:  
+- PortSwigger Academy  
+- TryHackMe  
+- OWASP Juice Shop  
+
+❌ Unauthorized testing on real systems is **illegal** and **unethical**. Always hack responsibly.  
+
+
