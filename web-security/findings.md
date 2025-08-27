@@ -7,22 +7,19 @@ This file contains documentation of vulnerabilities identified and fixed during 
 
 ---
 
-## Example 1: Reflected XSS
-- **Platform/Lab:** PortSwigger Academy (Reflected XSS)
-- **Context:** Search input field
-- **Payload (Lab Only):** `<script>alert(1)</script>`
-- **Evidence:** ./screenshots/xss.png
-- **Impact:** Client-side script execution (possible session hijacking in real apps)
-- **Risk:** Medium (~6.x CVSS)
-- **Remediation:** Input validation, output encoding, enable Content Security Policy
+## Example 1: Stored XSS — Blog Comments (PortSwigger Lab)
 
----
+- **Platform/Lab:** PortSwigger Web Security Academy — *Stored XSS into HTML context with nothing encoded*  
+- **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/stored  
+- **Context:** Blog comment form (user input stored in DB and reflected into HTML body without encoding)  
 
-## Example 2: SQL Injection
-- **Platform/Lab:** TryHackMe OWASP Top 10
-- **Context:** Login form
-- **Payload (Lab Only):** `' OR '1'='1`
-- **Evidence:** ./screenshots/sqli.png
-- **Impact:** Unauthorized access to database
-- **Risk:** High (~8.x CVSS)
-- **Remediation:** Use prepared statements / parameterized queries, error handling
+- **Payload (Lab Only):**
+  ```html
+  <script>alert('XSS')</script>
+- **Evidence:** ./screenshots/XSS_2.1.png, XSS_2.2.png, XSS_2.3.png
+- **Impact:** Any visitor executes attacker-controlled JavaScript → risk of session hijacking, phishing, defacement.
+- **Risk:** High
+- **Remediation:**
+- - Encode user input before injecting into HTML  
+  - Sanitize input server-side  
+  - Apply CSP
