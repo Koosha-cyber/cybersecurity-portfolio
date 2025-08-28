@@ -7,7 +7,8 @@ Practice Top 10 vulnerabilities in safe environments
 Document findings and results in GitHub
 Prepare a final report and a LinkedIn post
 
-#Deliverables
-'findings.md': Detailed documentation of lab findings (XSS, SQLi, CSRF, etc.)
-'reports/': Final reports (Markdown or PDF)
-'screenshots/': Screenshots from the labs
+- **Stored XSS (Blog Comments)** – PortSwigger Lab  
+  - 📄 [Finding documentation](./web-security/findings.md)  
+  - 🖼️ [Screenshots](./web-security/screenshots/)  
+  - 📝 [Detailed Report](./web-security/reports/Stored-XSS.md)  
+
