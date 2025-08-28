@@ -23,3 +23,34 @@ This file contains documentation of vulnerabilities identified and fixed during 
 - - Encode user input before injecting into HTML  
   - Sanitize input server-side  
   - Apply CSP
+ 
+  - ---
+
+  ---
+
+## Example 2: Reflected XSS — Search Field
+
+Platform/Lab: PortSwigger Web Security Academy – Reflected XSS into HTML context with nothing encoded
+
+Lab URL (description): https://portswigger.net/web-security/cross-site-scripting/reflected
+
+Context: Search input field (user input reflected directly into HTML page)
+
+Payload (Lab Only):
+<script>alert('XSS')</script>
+Evidence: ./screenshots/XSS_2.1.png, ./screenshots/XSS_2.2.png
+
+Impact: Attacker-controlled script executes in the victim’s browser → risk of session hijacking, credential theft, phishing.
+
+Risk: Medium-High (~6.x CVSS)
+
+Remediation:
+
+Encode user input before injecting into HTML
+
+Sanitize input server-side
+
+Apply Content Security Policy (CSP)
+
+  
+
