@@ -23,7 +23,7 @@ This file contains documentation of vulnerabilities identified and fixed during 
 - - Encode user input before injecting into HTML  
   - Sanitize input server-side  
   - Apply CSP
- 
+ 📄 [Detailed Report](./reports/Stored-XSS.md)
   - ---
 
   ---
