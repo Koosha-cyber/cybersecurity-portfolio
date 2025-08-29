@@ -1,79 +1,43 @@
-# 📝 Commit Message Guide — cybersecurity-portfolio
+# 📘 Commit Message Guide — Cybersecurity Portfolio  
 
-This guide ensures all commit messages in this repository are **clear, consistent, and professional**.
-
----
-
-## 1) Commit Message Format (mandatory)
-
-**Examples:**
-- `Add findings.md: Stored XSS (PortSwigger Lab)`
-- `Add report: Stored XSS (Blog Comments)`
-- `Add evidence: Stored XSS (screenshots)`
-- `Update README.md: add Stored XSS reference`
-- `Fix findings.md: screenshot path`
-- `Remove .keep from screenshots/`
-
-**Standard Actions:**
-- **Add** → for new files, reports, findings, evidence  
-- **Update** → for improvements or edits  
-- **Fix** → for correcting mistakes (paths, typos, wrong links)  
-- **Remove** → for deleting unnecessary files  
-- **Refactor** → for reorganizing structure without content change  
+This guide ensures all commit messages in this repository are **clear, consistent, and professional**.  
 
 ---
 
-## 2) Common Patterns for This Repository
+## 1) Commit Message Format (mandatory)  
 
-### Findings (`/web-security/findings.md`)
-- Add new finding:  
-  `Add finding: <Vuln> (<Platform/Lab>)`  
-  Example: `Add finding: Reflected XSS (PortSwigger Lab)`
-- Update existing finding:  
-  `Update finding: <Vuln> (<Platform/Lab>)`
-
-### Reports (`/web-security/reports/*.md`)
-- Add new detailed report:  
-  `Add report: <Vuln> (<Context/Scenario>)`  
-  Example: `Add report: Reflected XSS (Search field)`
-- Update existing report:  
-  `Update report: <Vuln> (<Context/Scenario>)`
-
-### Evidence / Screenshots (`/web-security/screenshots/`)
-- Add screenshot evidence:  
-  `Add evidence: <Vuln> (<Platform/Lab>)`  
-- Update/replace evidence:  
-  `Update evidence: <Vuln>`  
-- Remove outdated/duplicate evidence:  
-  `Remove evidence: <Vuln> (old/duplicate)`
-
-### README files
-- Add new reference to finding/report:  
-  `Update README.md: add <Vuln> reference`  
-- Improve structure or sections:  
-  `Update README.md: improve <section>`  
 
 ---
 
-## 3) 10-Second Checklist Before Commit
-- [ ] Action word (Add / Update / Fix / Remove / Refactor) included  
-- [ ] Vulnerability/subject name mentioned (e.g., Stored XSS)  
-- [ ] File or section is specified (findings.md, reports/, screenshots/, README.md)  
-- [ ] Description is short, clear, and professional  
+## 2) Allowed Types  
+
+- **Add** → For adding new files, findings, reports, evidence, etc.  
+- **Update** → For changes, improvements, or edits.  
+- **Fix** → For corrections (typos, broken links, screenshot path, etc.).  
+- **Remove** → For deleting unnecessary files.  
+- **Docs** → For documentation-only changes (README, guides, templates).  
+- **Refactor** → For restructuring without changing actual content.  
 
 ---
 
-## 4) Anti-Patterns (Avoid These)
-❌ `update`  
-❌ `fix stuff`  
-❌ `changes`  
-❌ `final`  
-❌ long or vague commit messages  
+## 3) Examples  
 
-(If extra explanation is needed → use the **Extended Description** box, not the title line.)
+- `Add: Stored XSS finding with evidence`  
+- `Add: Detailed report for Stored XSS (Blog Comments)`  
+- `Update: README.md with reference to Stored XSS`  
+- `Fix: Screenshot link in findings.md`  
+- `Remove: .keep file from screenshots folder`  
+- `Docs: Add COMMIT_GUIDE.md for message standards`  
 
 ---
 
-## 5) Golden Rule
-**Every commit message must explain clearly what changed, where it changed, and why.**  
-This makes your project history **professional, easy to review, and recruiter-friendly.**
+## 4) Best Practices  
+
+✔ Keep the first line short (max ~50 chars).  
+✔ Use **imperative mood** (“Add” not “Added” or “Adding”).  
+✔ If more explanation is needed, add it in a new line.  
+✔ Always be descriptive enough so others understand the change.  
+
+---
+
+⚡ By following this guide, all commits in this portfolio will look **clean, professional, and recruiter-friendly**.  
