@@ -20,8 +20,8 @@ As a result, attacker-controlled JavaScript can execute in the victim’s browse
 <script>alert</script>
 
 Evidence:
-Reflected-XSS-1.png
-Reflected-XSS-2.png
+../screenshots/Reflected-XSS-1.png
+../screenshots/Reflected-XSS-2.png
 
 ⚠️ Impact
 
