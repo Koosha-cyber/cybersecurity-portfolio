@@ -1,43 +1,40 @@
-# 📘 Commit Message Guide — Cybersecurity Portfolio  
+# 📝 Commit Message Guide — Cybersecurity Portfolio
 
-This guide ensures all commit messages in this repository are **clear, consistent, and professional**.  
-
----
-
-## 1) Commit Message Format (mandatory)  
-
+This guide ensures all commit messages in this repository are **clear, consistent, and professional**.
 
 ---
 
-## 2) Allowed Types  
+## ✅ Format
+Each commit message should follow this structure:
 
-- **Add** → For adding new files, findings, reports, evidence, etc.  
-- **Update** → For changes, improvements, or edits.  
-- **Fix** → For corrections (typos, broken links, screenshot path, etc.).  
-- **Remove** → For deleting unnecessary files.  
-- **Docs** → For documentation-only changes (README, guides, templates).  
-- **Refactor** → For restructuring without changing actual content.  
+
+Optional: Add details in the extended description box if needed.
 
 ---
 
-## 3) Examples  
-
-- `Add: Stored XSS finding with evidence`  
-- `Add: Detailed report for Stored XSS (Blog Comments)`  
-- `Update: README.md with reference to Stored XSS`  
-- `Fix: Screenshot link in findings.md`  
-- `Remove: .keep file from screenshots folder`  
-- `Docs: Add COMMIT_GUIDE.md for message standards`  
+## 🔹 Examples
+- **Add:** `Add findings.md for Stored XSS (PortSwigger Lab)`
+- **Update:** `Update README.md with reference to Stored XSS`
+- **Fix:** `Fix screenshot path in findings.md`
+- **Remove:** `Remove .keep from screenshots/`
+- **Docs:** `Docs: Add COMMIT_GUIDE.md`
 
 ---
 
-## 4) Best Practices  
+## 🔹 Standard Actions
+- **Add** → for new files, reports, findings, evidence  
+- **Update** → for improvements or edits  
+- **Fix** → for corrections and bug fixes  
+- **Remove** → for deletions  
+- **Docs** → for documentation-only changes  
+- **Refactor** → for reorganizing structure (no content change)  
 
+---
+
+## ⚡ Best Practices
 ✔ Keep the first line short (max ~50 chars).  
 ✔ Use **imperative mood** (“Add” not “Added” or “Adding”).  
-✔ If more explanation is needed, add it in a new line.  
-✔ Always be descriptive enough so others understand the change.  
+✔ Mention the vulnerability name or context where possible.  
+✔ Be descriptive enough so others understand the change.  
 
 ---
-
-⚡ By following this guide, all commits in this portfolio will look **clean, professional, and recruiter-friendly**.  
