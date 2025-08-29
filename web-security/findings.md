@@ -24,6 +24,23 @@ This file contains documentation of vulnerabilities identified and fixed during 
   - Sanitize input server-side  
   - Apply CSP
  📄 [Detailed Report](./reports/Stored-XSS.md)
+References:
+
+OWASP DOM XSS Prevention Cheat Sheet
+
+PortSwigger DOM XSS Labs
+
+Tags:
+
+web-security
+
+stored-xss
+
+owasp-top10
+
+portswigger
+
+➡️ Detailed Report
   - ---
 
   ---
@@ -52,20 +69,38 @@ Sanitize input server-side
 
 Apply Content Security Policy (CSP)
 
-### Example 3: DOM XSS – document.write sink (PortSwigger Lab)
+References:
 
-**Platform/Lab:** PortSwigger Web Security Academy – *DOM XSS in document.write sink using source location.search*  
-**Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based  
-**Context:** `location.search` (user input) written unsafely into HTML via `document.write`
+OWASP DOM XSS Prevention Cheat Sheet
+
+PortSwigger DOM XSS Labs
+
+Tags:
+
+web-security
+
+reflected-xss
+
+owasp-top10
+
+portswigger
+
+➡️ Detailed Report
+  - ---
+
+  ---
+## Example 3: DOM XSS — document.write sink (PortSwigger Lab)
+
+- **Platform/Lab:** PortSwigger Web Security Academy — DOM XSS in document.write sink using source location.search  
+- **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based  
+- **Context:** `location.search` (user input) written unsafely into HTML via `document.write`
 
 **Payload (Lab Only):**
 ```html
 <script>alert(1)</script>
-
-Evidence: see /screenshots/DOM-XSS-1.png, /screenshots/DOM-XSS-2.png, /screenshots/DOM-XSS-3.png
-Impact: Arbitrary JavaScript execution → risk of session hijacking, phishing, defacement.
+Evidence: ./screenshots/DOM-XSS-1.png, ./screenshots/DOM-XSS-2.png, ./screenshots/DOM-XSS-3.png
+Impact: Arbitrary JavaScript execution → risk of session hijacking, phishing, defacement
 Risk: High
-
 Remediation:
 
 Use textContent or innerText instead of document.write
@@ -80,8 +115,17 @@ OWASP DOM XSS Prevention Cheat Sheet
 
 PortSwigger DOM XSS Labs
 
-Tags: dom-xss, web-security, owasp-top10, portswigger
+Tags:
+
+web-security
+
+dom-xss
+
+owasp-top10
+
+portswigger
 
 ➡️ Detailed Report
-  
+  - ---
 
+  ---
