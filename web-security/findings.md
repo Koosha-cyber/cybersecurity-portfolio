@@ -40,34 +40,30 @@ owasp-top10
 
 portswigger
 
-➡️ Detailed Report
   - ---
 
   ---
 
 ## Example 2: Reflected XSS — Search Field
 
-Platform/Lab: PortSwigger Web Security Academy – Reflected XSS into HTML context with nothing encoded
+- **Platform/Lab:** PortSwigger Web Security Academy – Reflected XSS into HTML context with nothing encoded
+- **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/reflected
+- **Context:** Search input field (user input reflected directly into HTML page)
+- 
+- **Payload (Lab Only):**
+  ```html
+  <script>alert('XSS')</script>
+- **Evidence:** ./screenshots/XSS_2.1.png, ./screenshots/XSS_2.2.png
+- **Impact:** Attacker-controlled script executes in the victim’s browser → risk of session hijacking, credential theft, phishing.
+- **Risk:** Medium-High (~6.x CVSS)
 
-Lab URL (description): https://portswigger.net/web-security/cross-site-scripting/reflected
+- **Remediation:**
 
-Context: Search input field (user input reflected directly into HTML page)
+- - Encode user input before injecting into HTML
 
-Payload (Lab Only):
-<script>alert('XSS')</script>
-Evidence: ./screenshots/XSS_2.1.png, ./screenshots/XSS_2.2.png
+  - Sanitize input server-side
 
-Impact: Attacker-controlled script executes in the victim’s browser → risk of session hijacking, credential theft, phishing.
-
-Risk: Medium-High (~6.x CVSS)
-
-Remediation:
-
-Encode user input before injecting into HTML
-
-Sanitize input server-side
-
-Apply Content Security Policy (CSP)
+  - Apply Content Security Policy (CSP)
 
 References:
 
@@ -95,13 +91,13 @@ portswigger
 - **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based  
 - **Context:** `location.search` (user input) written unsafely into HTML via `document.write`
 
-**Payload (Lab Only):**
-html
-<script>alert(1)</script>
-Evidence: ./screenshots/DOM-XSS-1.png, ./screenshots/DOM-XSS-2.png, ./screenshots/DOM-XSS-3.png
-Impact: Arbitrary JavaScript execution → risk of session hijacking, phishing, defacement
-Risk: High
-Remediation:
+- **Payload (Lab Only):**
+  ```html
+  <script>alert(1)</script>
+- **Evidence:** ./screenshots/DOM-XSS-1.png, ./screenshots/DOM-XSS-2.png, ./screenshots/DOM-XSS-3.png
+- **Impact:** Arbitrary JavaScript execution → risk of session hijacking, phishing, defacement
+- **Risk:** High
+- **Remediation:**
 
 Use textContent or innerText instead of document.write
 
