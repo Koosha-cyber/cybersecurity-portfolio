@@ -52,11 +52,11 @@ Sanitize input server-side
 
 Apply Content Security Policy (CSP)
 
-## Example 3: DOM XSS – document.write sink (PortSwigger Lab)
+### Example 3: DOM XSS – document.write sink (PortSwigger Lab)
 
 **Platform/Lab:** PortSwigger Web Security Academy – *DOM XSS in document.write sink using source location.search*  
 **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based  
-**Context:** `location.search` (user input) written unsafely into HTML via `document.write`  
+**Context:** `location.search` (user input) written unsafely into HTML via `document.write`
 
 **Payload (Lab Only):**
 ```html
@@ -65,13 +65,22 @@ Apply Content Security Policy (CSP)
 Evidence: see /screenshots/DOM-XSS-1.png, /screenshots/DOM-XSS-2.png, /screenshots/DOM-XSS-3.png
 Impact: Arbitrary JavaScript execution → risk of session hijacking, phishing, defacement.
 Risk: High
+
 Remediation:
 
-Avoid using document.write.
+Use textContent or innerText instead of document.write
 
-Use textContent or innerText.
+Validate and sanitize user input
 
-Apply CSP.
+Apply CSP
+
+References:
+
+OWASP DOM XSS Prevention Cheat Sheet
+
+PortSwigger DOM XSS Labs
+
+Tags: dom-xss, web-security, owasp-top10, portswigger
 
 ➡️ Detailed Report
   
