@@ -96,7 +96,7 @@ portswigger
 - **Context:** `location.search` (user input) written unsafely into HTML via `document.write`
 
 **Payload (Lab Only):**
-```html
+html
 <script>alert(1)</script>
 Evidence: ./screenshots/DOM-XSS-1.png, ./screenshots/DOM-XSS-2.png, ./screenshots/DOM-XSS-3.png
 Impact: Arbitrary JavaScript execution → risk of session hijacking, phishing, defacement
