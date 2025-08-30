@@ -152,7 +152,40 @@ OWASP DOM XSS Prevention Cheat Sheet
 
 PortSwigger DOM XSS Labs
 
-Tags: web-security, dom-xss, owasp-top10, portswigger
+---
+
+## Example 5: DOM XSS — jQuery anchor `href` sink (PortSwigger Lab)
+
+- **Platform/Lab:** PortSwigger Web Security Academy – *DOM XSS in jQuery anchor `href` attribute sink using source `location.search`*
+- **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based
+- **Context:** `location.search` value is inserted into an anchor `<a>` tag `href` attribute by jQuery without sanitization.
+
+- **Payload (Lab Only):**
+  ```html
+  ?returnPath=javascript:alert(document.domain)
+
+- **Evidence:** ./screenshots/DOM-XSS-in jQuery-1.png, ./screenshots/DOM-XSS-in jQuery-2.png
+
+- **Impact:** Attacker can inject malicious JavaScript via crafted URL → arbitrary code execution, phishing, credential theft.
+
+- **Risk:** High
+
+- **Remediation:**
+Do not assign user input directly to href attributes.
+
+Validate and sanitize all query string parameters.
+
+Explicitly block dangerous protocols (javascript:, data:, etc.).
+
+Apply CSP (Content Security Policy) to mitigate XSS exploitation.
+
+References:
+
+OWASP DOM XSS Prevention Cheat Sheet
+
+PortSwigger DOM XSS Labs
+
+Tags: web-security, dom-xss, jquery, owasp-top10, portswigger
 
 ➡️ Detailed Report
   - ---
