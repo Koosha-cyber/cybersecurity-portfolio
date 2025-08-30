@@ -131,9 +131,9 @@ portswigger
 - **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based
 - **Context:** `location.search` (user-controlled query string) is written unsafely into a page `<div>` via `element.innerHTML`.
 
-**Payload (Lab Only):**
-```html
-<img src=x onerror=alert(1)>
+- **Payload (Lab Only):**
+  ```html
+  <img src=x onerror=alert(1)>
 - **Evidence:** ./screenshots/DOM-XSS-innerHTML-1.png, ./screenshots/DOM-XSS-innerHTML-2.png
 - **Impact:** Arbitrary JavaScript execution in victim’s browser → risk of session hijacking, credential theft, phishing, defacement.
 - **Risk:** High
