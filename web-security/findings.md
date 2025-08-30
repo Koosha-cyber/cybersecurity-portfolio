@@ -125,3 +125,36 @@ portswigger
   - ---
 
   ---
+## Example 4: DOM XSS — innerHTML sink (PortSwigger Lab)
+
+- **Platform/Lab:** PortSwigger Web Security Academy – *DOM XSS in `innerHTML` sink using source `location.search`*
+- **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based
+- **Context:** `location.search` (user-controlled query string) is written unsafely into a page `<div>` via `element.innerHTML`.
+
+**Payload (Lab Only):**
+```html
+<img src=x onerror=alert(1)>
+- **Evidence:** ./screenshots/DOM-XSS-innerHTML-1.png, ./screenshots/DOM-XSS-innerHTML-2.png
+- **Impact:** Arbitrary JavaScript execution in victim’s browser → risk of session hijacking, credential theft, phishing, defacement.
+- **Risk:** High
+- **Remediation:**
+Avoid innerHTML for inserting user input; use textContent/innerText or safe DOM APIs.
+
+If HTML is truly required, sanitize with a trusted library (e.g., DOMPurify) before insertion.
+
+Validate and encode user-controlled data appropriately.
+
+Apply Content Security Policy (CSP) to reduce XSS impact.
+
+References:
+
+OWASP DOM XSS Prevention Cheat Sheet
+
+PortSwigger DOM XSS Labs
+
+Tags: web-security, dom-xss, owasp-top10, portswigger
+
+➡️ Detailed Report
+  - ---
+
+  ---
