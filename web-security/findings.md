@@ -191,3 +191,32 @@ Tags: web-security, dom-xss, jquery, owasp-top10, portswigger
   - ---
 
   ---
+### Example 6: DOM XSS — jQuery selector sink using hashchange event (PortSwigger Lab)
+
+- **Platform/Lab:** PortSwigger Web Security Academy – *DOM XSS in jQuery selector sink using a hashchange event*  
+- **Lab URL (description):** https://portswigger.net/web-security/cross-site-scripting/dom-based  
+- **Context:** `location.hash` (user-controlled input) passed directly to jQuery’s `$()` selector inside a `hashchange` event.  
+
+- **Payload (Lab Only):**
+  ```html
+  #<img src=x onerror=print()>
+- **Evidence:** ./screenshots/DOM-XSS-jQuery-hashchange-1.png, ./screenshots/DOM-XSS-jQuery-hashchange-2.png
+- **Impact:** Attacker-controlled code execution in victim’s browser → risk of arbitrary JavaScript execution, phishing, credential theft.
+
+- **Risk:** High
+
+- **Remediation:**
+
+Avoid passing location.hash directly to jQuery selectors.
+
+Sanitize and validate hash values before use.
+
+Apply CSP (Content Security Policy).
+
+References:
+
+OWASP DOM XSS Prevention Cheat Sheet
+
+PortSwigger DOM XSS Labs
+
+📄 Detailed Report
