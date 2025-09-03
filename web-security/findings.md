@@ -263,7 +263,61 @@ attribute-injection
 
 portswigger
 
+➡️ Detailed Report
+  - ---
+
+  ---
+  ### Example 8: Stored XSS — Anchor `href` Attribute with Double Quotes HTML-encoded (PortSwigger Lab)
+
+- **Platform/Lab:** PortSwigger Web Security Academy – Stored XSS into anchor `href` attribute with double quotes HTML-encoded  
+- **Lab URL (description):** [PortSwigger Lab](https://portswigger.net/web-security/cross-site-scripting/contexts)  
+- **Context:** User input stored in DB → reflected into `<a href="...">` attribute (with double quotes encoded, but still injectable)  
+
+- **Payload (Lab Only):**
+  ```html
+  javascript:alert(1)
+- **Evidence:** ./screenshots/Stored-XSS-attribute-href-1.png, ./screenshots/Stored-XSS-attribute-href-2.png
+
+- **Impact:**
+When a victim clicks the malicious link, attacker-controlled JavaScript executes. This can lead to:
+
+Session hijacking
+
+Credential theft
+
+Phishing / redirection to malicious sites
+
+- **Risk:** High
+
+- **Remediation:**
+
+Encode & sanitize user input inside attributes
+
+Forbid javascript: or dangerous schemes in href
+
+Use an allowlist of safe URL schemes (http, https)
+
+Apply Content Security Policy (CSP)
+
+References:
+
+OWASP XSS Prevention Cheat Sheet
+
+PortSwigger XSS Labs
+
+Tags:
+
+web-security
+
+stored-xss
+
+attribute-injection
+
+href
+
 owasp-top10
+
+portswigger
 
 ➡️ Detailed Report
   - ---
