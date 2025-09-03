@@ -323,3 +323,38 @@ portswigger
   - ---
 
   ---
+
+### Example 9: Reflected XSS — JavaScript String (PortSwigger Lab)
+
+- **Platform/Lab:** PortSwigger Web Security Academy – Reflected XSS into a JavaScript string with angle brackets HTML-encoded  
+- **Lab URL (description):** [PortSwigger Lab](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-angle-brackets-html-encoded)  
+- **Context:** User input is placed inside a JavaScript string, with `< >` encoded, but quotes not encoded.
+
+- **Payload (Lab Only):**
+  ```javascript
+  ';alert(1);// 
+- **Evidence:** screenshots/Reflected-XSS-JS-String-1.png, Reflected-XSS-JS-String-2.png
+
+- **Impact:**
+Attacker-controlled input escapes JavaScript string → arbitrary JS execution → session hijacking, credential theft, phishing.
+
+- **Risk:** High
+
+- **Remediation:**
+
+Escape user input properly when embedding in JavaScript strings
+
+Use JSON encoding for dynamic values in JS
+
+Apply CSP to mitigate XSS impact
+
+References:
+
+OWASP XSS Prevention Cheat Sheet
+
+PortSwigger Labs – JavaScript string XSS
+
+➡️ Detailed Report
+  - ---
+
+  ---
