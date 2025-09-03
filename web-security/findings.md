@@ -219,4 +219,53 @@ OWASP DOM XSS Prevention Cheat Sheet
 
 PortSwigger DOM XSS Labs
 
-📄 Detailed Report
+➡️ Detailed Report
+  - ---
+
+  ---
+  ### Example 7: Reflected XSS — Attribute Injection with Angle Brackets HTML-encoded (PortSwigger Lab)
+
+- **Platform/Lab:** PortSwigger Web Security Academy – Reflected XSS into attribute with angle brackets HTML-encoded  
+- **Lab URL (description):** [PortSwigger Lab](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-attribute-angle-brackets-html-encoded)  
+- **Context:** Attribute injection (HTML-encoded angle brackets, input reflected inside attribute value)
+
+- **Payload (Lab Only):**
+  ```html
+  " autofocus onfocus=alert(1) x
+- **Evidence:** ./screenshots/Reflected-XSS-attribute with angle brackets HTML-1.png ./screenshots/Reflected-XSS-attribute with angle brackets HTML-2.png
+
+- **Impact:**
+Attacker-controlled attribute triggers arbitrary JavaScript execution → risk of credential theft, phishing, session hijacking.
+
+- **Risk:** High
+
+- **Remediation:**
+
+Encode user input properly before placing inside attributes
+
+Use allowlists for valid attribute values
+
+Apply Content Security Policy (CSP)
+
+References:
+
+OWASP XSS Prevention Cheat Sheet
+
+PortSwigger Attribute-based XSS
+
+Tags:
+
+web-security
+
+reflected-xss
+
+attribute-injection
+
+portswigger
+
+owasp-top10
+
+➡️ Detailed Report
+  - ---
+
+  ---
