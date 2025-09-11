@@ -29,7 +29,8 @@ This repository showcases my **cybersecurity lab projects** and hands-on exercis
 - `web-security/` → Web application security labs  
   - [`Cross-Site-Scripting`](web-security/Cross-Site-Scripting) → 9 Apprentice XSS labs (reports & screenshots)  
   - *(More categories coming soon: SQLi, CSRF, SSRF, …)*  
-- `findings.md` → Consolidated findings (lab-only)  
+- `findings/` → High-Level summaries per category
+ - [`XSS - Overview`](web-security/findings/Cross-Site-Scripting/overview.md)  
 - `COMMIT_GUIDE.md` → Standards for writing commit messages  
 
 ---
@@ -39,6 +40,7 @@ This repository showcases my **cybersecurity lab projects** and hands-on exercis
 | Category | Labs | Status |
 |----------|------|--------|
 | [Cross-Site Scripting (XSS)](web-security/Cross-Site-Scripting) | 9 Apprentice Labs | ✔ Completed |
+| [XSS Findings (Overview)](web-security/findings/Cross-Site-Scripting/overview.md) | 3 summaries (growing) | ✔ Added |
 | SQL Injection | Coming soon | ⏳ In progress |
 | CSRF | Coming soon | ⏳ In progress |
 
