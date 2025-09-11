@@ -1,14 +1,55 @@
-# Web Vulnerability Assessment (Lab-Only)
-This repository is ''Only'' for practicing on legal labs such as TryHackMe, PortSwigger Academy, or OWASP Juice Shop.
-Never try on real websites or system without explicit permission.
+# Cross-Site Scripting (XSS) Labs – Apprentice Level
 
-# Objectives
-Practice Top 10 vulnerabilities in safe environments
-Document findings and results in GitHub
-Prepare a final report and a LinkedIn post
+This folder contains my reports and evidence for the **9 Apprentice-level XSS labs** from PortSwigger Web Security Academy.  
+All work documented here is performed **only in legal lab environments** (PortSwigger Academy, OWASP Juice Shop, TryHackMe).
 
-- **Stored XSS (Blog Comments)** – PortSwigger Lab  
-  - 📄 [Finding documentation](./web-security/findings.md)  
-  - 🖼️ [Screenshots](./web-security/screenshots/)  
-  - 📝 [Detailed Report](./web-security/reports/Stored-XSS.md)  
+---
 
+## 📂 Structure
+- `reports/` → Detailed markdown reports for each lab  
+- `screenshots/` → Screenshots captured during exploitation and verification  
+
+---
+
+## ✅ Completed Labs
+
+1. **Reflected XSS into HTML context with nothing encoded**  
+   - [Report](reports/Reflected-XSS.md) | [Screenshots](screenshots/Reflected-XSS-1.png)
+
+2. **Stored XSS into HTML context with nothing encoded**  
+   - [Report](reports/Stored-XSS.md) | [Screenshots](screenshots/Stored-XSS-1.png)
+
+3. **DOM XSS in document.write sink using location.search**  
+   - [Report](reports/DOM-XSS.md) | [Screenshots](screenshots/DOM-XSS-1.png)
+
+4. **DOM XSS in jQuery selector sink using a hashchange event**  
+   - [Report](reports/DOM-XSS-jquery-hashchange.md)
+
+5. **DOM XSS in jQuery anchor href sink**  
+   - [Report](reports/DOM-XSS-jquery.md)
+
+6. **DOM XSS in innerHTML sink**  
+   - [Report](reports/DOM-XSS-innerHTML.md)
+
+7. **Reflected XSS into attribute with angle brackets HTML-encoded**  
+   - [Report](reports/Reflected-XSS-Attribute.md)
+
+8. **Reflected XSS into JavaScript string with angle brackets HTML-encoded**  
+   - [Report](reports/Reflected-XSS-JS-String.md)
+
+9. **Stored XSS into anchor href attribute with double quotes HTML-encoded**  
+   - [Report](reports/Stored-XSS-href.md)
+
+---
+
+## 🔎 Methodology
+Each lab write-up includes:
+1. Context (where the vulnerability occurs)  
+2. Payloads used (lab-only, safe)  
+3. Evidence (screenshots)  
+4. Impact (real-world risk)  
+5. Remediation steps  
+
+---
+
+📌 *This folder is part of my cybersecurity portfolio: documenting practical web security labs and remediation strategies.*
