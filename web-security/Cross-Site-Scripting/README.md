@@ -15,7 +15,7 @@ All work documented here is performed **only in legal lab environments** (PortSw
 
 | # | Lab Title | Report | Screenshots |
 |---|-----------|--------|-------------|
-| 1 | Reflected XSS into HTML context with nothing encoded | [Report](reports/Reflected-XSS.md) | [Screenshots](screenshots/Reflected-XSS-1.png) |
+| 1 | Reflected XSS into HTML context with nothing encoded | [Report](reports/Reflected-XSS.md) | [1](screenshots/Reflected-XSS-1.png) [2](screenshots/Reflected-XSS-2.png) [3](screenshots/Reflected-XSS-3.png) |
 | 2 | Stored XSS into HTML context with nothing encoded | [Report](reports/Stored-XSS.md) | [Screenshots](screenshots/Stored-XSS-1.png) |
 | 3 | DOM XSS in document.write sink using location.search | [Report](reports/DOM-XSS.md) | [Screenshots](screenshots/DOM-XSS-1.png) |
 | 4 | DOM XSS in jQuery selector sink using a hashchange event | [Report](reports/DOM-XSS-jquery-hashchange.md) | — |
