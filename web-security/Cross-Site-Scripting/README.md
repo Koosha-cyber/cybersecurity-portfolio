@@ -20,8 +20,7 @@ All work documented here is performed **only in legal lab environments** (PortSw
 | 3 | DOM XSS in document.write sink using location.search | [Report](reports/DOM-XSS.md) | [1](screenshots/DOM-XSS-1.png) [2](screenshots/DOM-XSS-2.png) [3](screenshots/DOM-XSS-3.png) |
 | 4 | DOM XSS in jQuery selector sink using a hashchange event | [Report](reports/DOM-XSS-jQuery-hashchange.md) | [1](screenshots/DOM-XSS-jQuery-hashchange-1.png) [2](screenshots/DOM-XSS-jQuery-hashchange-2.png) |
 | 5 | DOM XSS in jQuery anchor href sink | [Report](reports/DOM-XSS-jQuery.md) |  [1](screenshots/DOM-XSS-in-jQuery-1.png) [2](screenshots/DOM-XSS-in-jQuery-2.png) |
-| 6 | DOM XSS in innerHTML sink | [Report](reports/DOM-XSS-innerHTML.md) |  [1](screenshots/DOM-XSS-innerHTML-1.png
-) [2](screenshots/DOM-XSS-innerHTML-2.png) |
+| 6 | DOM XSS in innerHTML sink | [Report](reports/DOM-XSS-innerHTML.md) |  [1](screenshots/DOM-XSS-innerHTML-1.png) [2](screenshots/DOM-XSS-innerHTML-2.png) |
 | 7 | Reflected XSS into attribute with angle brackets HTML-encoded | [Report](reports/Reflected-XSS-Attribute.md) | — |
 | 8 | Reflected XSS into JavaScript string with angle brackets HTML-encoded | [Report](reports/Reflected-XSS-JS-String.md) | — |
 | 9 | Stored XSS into anchor href attribute with double quotes HTML-encoded | [Report](reports/Stored-XSS-href.md) | — |
