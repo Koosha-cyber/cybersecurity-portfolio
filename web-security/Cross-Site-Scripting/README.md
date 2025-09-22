@@ -23,7 +23,7 @@ All work documented here is performed **only in legal lab environments** (PortSw
 | 6 | DOM XSS in innerHTML sink | [Report](reports/DOM-XSS-innerHTML.md) |  [1](screenshots/DOM-XSS-innerHTML-1.png) [2](screenshots/DOM-XSS-innerHTML-2.png) |
 | 7 | Reflected XSS into attribute with angle brackets HTML-encoded | [Report](reports/Reflected-XSS-Attribute.md) | — |
 | 8 | Reflected XSS into JavaScript string with angle brackets HTML-encoded | [Report](reports/Reflected-XSS-JS-String.md) | — |
-| 9 | Stored XSS into anchor href attribute with double quotes HTML-encoded | [Report](reports/Stored-XSS-href.md) | — |
+| 9 | Stored XSS into anchor href attribute with double quotes HTML-encoded | [Report](reports/Stored-XSS-href.md) | [1](screenshots/Stored-XSS-attribute-href-1.png) [2](screenshots/Stored-XSS-attribute-href-2.png) |
 
 ---
 
